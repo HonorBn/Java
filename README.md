@@ -1,3 +1,3 @@
-#Algorithm
+Algorithm
 ==========
-##Personal Repository for Solutions of Algorithm Problems
+Personal Repository for Solutions of Algorithm Problems
