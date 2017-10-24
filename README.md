@@ -15,7 +15,7 @@
     $ git init
     $ git status
     ```
-* Git 원격 지정
+* Git 원격 저장소 지정
     ```
     $ git remote add origin https://github.com/HonorBn/Algorithm.git
     ```
@@ -35,4 +35,10 @@
 * Push
     ```
     $ git push -u origin master
+    ```
+
+* 로컬 동기화
+    ```
+    $ git fetch origin
+    $ git pull origin master
     ```
