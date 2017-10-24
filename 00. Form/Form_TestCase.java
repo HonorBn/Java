@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Form_SW_Expert {
+public class Form_TestCase {
 	
 	static BufferedReader br;
 	static StringBuilder result;
