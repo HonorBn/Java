@@ -7,11 +7,20 @@
 + Git 설치
 + Git Bash Path 지정
 
-"'
-    Git Bash 실행
-    $ vi .bashrc
-    Insert 키 (편집 모드)
-    $ cd "your directory"
-    esc 키
-    $ :wq
-"'
+This is a normal paragraph:
+
+    Git Bash 실행
+    
+    $ vi .bashrc
+    
+    Insert 키 (편집 모드)
+    
+    $ cd "your directory"
+    
+    Esc 키
+    
+    $ :wq
+    
+    This is a code block.
+
++ git
