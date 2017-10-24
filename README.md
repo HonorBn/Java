@@ -4,4 +4,4 @@
 
 ### GitHub 사용법
 
-#### continue...
++ 설치
