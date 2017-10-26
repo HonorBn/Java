@@ -34,7 +34,7 @@
     ```
 * Push
     ```
-    $ git push -u origin master
+    $ git push origin master
     ```
 
 * 로컬 동기화
