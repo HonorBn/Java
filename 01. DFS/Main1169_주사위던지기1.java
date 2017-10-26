@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main1169_1 {
+public class Main1169_주사위던지기1 {
 	
 	static int n;
 	static int m;
