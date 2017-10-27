@@ -2,11 +2,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
+/* ì…ë ¥ ë°ì´í„°
 7
  */
 
-public class Main1027_ÁÁÀº¼ö¿­ {
+public class Main1027_ì¢‹ì€ìˆ˜ì—´ {
 	
 	static int n;
 	static boolean flag;
