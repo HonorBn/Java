@@ -3,12 +3,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main1021_Àå³­°¨Á¶¸³ {
+public class Main1021_ì¥ë‚œê°ì¡°ë¦½ {
 	
-	static int n, m;	// ºÎÇ° Á¾·ù ¼ö, ºÎÇ° Á¶ÇÕ °¡Áş¼ö
-	static int[][] parts;		// ºÎÇ°º° Á¦ÀÛ¿¡ ÇÊ¿äÇÑ ºÎÇ° Á¾·ù¿Í °³¼ö
-	static int[] cntBasic;		// ¿Ï¼ºÇ° Á¦ÀÛ¿¡ ÇÊ¿äÇÑ ±âº» ºÎÇ° Á¾·ù¿Í °³¼ö (ÃÖÁ¾ Ãâ·Â ¹è¿­)
-	static boolean[] ifBasic;	// ±âº» ºÎÇ° : true, Áß°£ºÎÇ° or ¿Ï¼ºÇ° : false
+	static int n, m;		// ë¶€í’ˆ ì¢…ë¥˜ ìˆ˜, ë¶€í’ˆ ì¡°í•© ê°€ì§“ìˆ˜
+	static int[][] parts;		// ë¶€í’ˆë³„ ì œì‘ì— í•„ìš”í•œ ë¶€í’ˆ ì¢…ë¥˜ì™€ ê°œìˆ˜
+	static int[] cntBasic;		// ì™„ì„±í’ˆ ì œì‘ì— í•„ìš”í•œ ê¸°ë³¸ ë¶€í’ˆ ì¢…ë¥˜ì™€ ê°œìˆ˜ (ìµœì¢… ì¶œë ¥ ë°°ì—´)
+	static boolean[] ifBasic;	// ê¸°ë³¸ ë¶€í’ˆ : true, ì¤‘ê°„ë¶€í’ˆ or ì™„ì„±í’ˆ : false
 	
 	public static void main(String[] args) throws IOException {
 		
@@ -26,11 +26,11 @@ public class Main1021_Àå³­°¨Á¶¸³ {
 			st = new StringTokenizer(br.readLine());
 			parts	[Integer.parseInt(st.nextToken())-1]
 					[Integer.parseInt(st.nextToken())-1]
-				=	 Integer.parseInt(st.nextToken());	// iÇà : ºÎÇ° ¹øÈ£, j¿­ : ÇÏÀ§ ºÎÇ° ¹øÈ£, °ª : °³¼ö
+				=	 Integer.parseInt(st.nextToken());	// ií–‰ : ë¶€í’ˆ ë²ˆí˜¸, jì—´ : í•˜ìœ„ ë¶€í’ˆ ë²ˆí˜¸, ê°’ : ê°œìˆ˜
 		}
 		
 		int rowSum;
-		for (int i = 0; i < n; i++) {		// partsÀÇ °¢ Çà¿¡¼­ ¸ğµç ¿­ÀÇ ÇÕÀÌ 0ÀÌ¸é ±âº» ºÎÇ°
+		for (int i = 0; i < n; i++) {		// partsì˜ ê° í–‰ì—ì„œ ëª¨ë“  ì—´ì˜ í•©ì´ 0ì´ë©´ ê¸°ë³¸ ë¶€í’ˆ
 			rowSum = 0;
 			for (int j = 0; j < n; j++) rowSum += parts[i][j];
 			if (rowSum == 0) ifBasic[i] = true; 
@@ -39,25 +39,25 @@ public class Main1021_Àå³­°¨Á¶¸³ {
 //		for (int[] line : parts)
 //			System.out.println(Arrays.toString(line));
 		
-		fun(n);	// ¿Ï¼ºÇ° ¹øÈ£ ÀÔ·Â
+		fun(n);	// ì™„ì„±í’ˆ ë²ˆí˜¸ ì…ë ¥
 		
-		for (int i = 0; i < cntBasic.length; i++) {		// ±âº» ºÎÇ°¸¸ ±× °³¼ö Ãâ·Â
+		for (int i = 0; i < cntBasic.length; i++) {		// ê¸°ë³¸ ë¶€í’ˆë§Œ ê·¸ ê°œìˆ˜ ì¶œë ¥
 			if (ifBasic[i]) System.out.printf("%d %d\n", i+1, cntBasic[i]);
 		}
 		
 	}
 	
-	public static void fun(int partNumber) {	// ¸Å°³º¯¼ö·Î ºÎÇ° ¹øÈ£ Àü´Ş
+	public static void fun(int partNumber) {	// ë§¤ê°œë³€ìˆ˜ë¡œ ë¶€í’ˆ ë²ˆí˜¸ ì „ë‹¬
 		
 		if (ifBasic[partNumber-1]) {
-			cntBasic[partNumber-1]++;	// ÇØ´ç ºÎÇ°ÀÌ ±âº» ºÎÇ°ÀÌ¸é ±× °³¼ö Áõ°¡
+			cntBasic[partNumber-1]++;	// í•´ë‹¹ ë¶€í’ˆì´ ê¸°ë³¸ ë¶€í’ˆì´ë©´ ê·¸ ê°œìˆ˜ ì¦ê°€
 			return;
 		}
 		
-		int[] part = parts[partNumber-1];	 // ÇØ´ç ºÎÇ° ÇÊ¿äÇÑ ºÎÇ° Á¾·ù¿Í °³¼ö ÃßÃâ
+		int[] part = parts[partNumber-1];	 // í•´ë‹¹ ë¶€í’ˆ í•„ìš”í•œ ë¶€í’ˆ ì¢…ë¥˜ì™€ ê°œìˆ˜ ì¶”ì¶œ
 		for (int i = 0; i < part.length; i++) {
-			if (part[i] > 0) {	// ÇÊ¿ä ºÎÇ° ¼ö°¡ 1°³ ÀÌ»óÀÏ °æ¿ì
-				for (int j = 0; j < part[i]; j++) { // ÇÊ¿ä ºÎÇ° ¹øÈ£¸¦ ¸Å°³º¯¼ö·Î ±× °³¼ö¸¸Å­ ¹İº¹ È£Ãâ
+			if (part[i] > 0) {	// í•„ìš” ë¶€í’ˆ ìˆ˜ê°€ 1ê°œ ì´ìƒì¼ ê²½ìš°
+				for (int j = 0; j < part[i]; j++) { // í•„ìš” ë¶€í’ˆ ë²ˆí˜¸ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ê·¸ ê°œìˆ˜ë§Œí¼ ë°˜ë³µ í˜¸ì¶œ
 					fun(i+1);
 				}
 			}
