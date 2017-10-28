@@ -5,19 +5,11 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-4 8 2
-1 2 4
-1 3 2
-1 4 7
-2 1 1
-2 3 5
-3 1 2
-3 4 4
-4 2 3
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2341&sca=50&sfl=wr_hit&stx=2109&sop=and
+*/
 
-public class Main2109_²Ü²ÜÀÌÃàÁ¦_reReRE {
+public class Main2109_ê¿€ê¿€ì´ì¶•ì œ {
 	
 	static Path paths[];
 	static final int MAX_TIME = 99999999;
