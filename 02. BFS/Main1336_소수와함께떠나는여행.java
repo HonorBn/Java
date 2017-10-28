@@ -6,11 +6,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-1033 8179
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=615&sca=50&sfl=wr_hit&stx=1336&sop=and
 */
 
-public class Main1336_¼Ò¼ö¿ÍÇÔ²²¶°³ª´Â¿©Çà {
+public class Main1336_ì†Œìˆ˜ì™€í•¨ê»˜ë– ë‚˜ëŠ”ì—¬í–‰ {
 	
 	static ArrayList<String> primeList;
 	
@@ -54,7 +54,7 @@ public class Main1336_¼Ò¼ö¿ÍÇÔ²²¶°³ª´Â¿©Çà {
 		System.out.println(fromLv);
 	}
 	
-	// È¯½Â Ã¼Å©
+	// í™˜ìŠ¹ ì²´í¬
 	private static boolean transfer(int fromId, int toId) {
 		char[] fromBus = primeList.get(fromId).toCharArray();
 		char[] toBus = primeList.get(toId).toCharArray();
@@ -66,7 +66,7 @@ public class Main1336_¼Ò¼ö¿ÍÇÔ²²¶°³ª´Â¿©Çà {
         return true;
 	}
 	
-	// ¼Ò¼ö °è»ê 
+	// ì†Œìˆ˜ ê³„ì‚° 
 	private static int prime() {
 		primeList = new ArrayList<>();
 		int[] numbers = new int[9998];
