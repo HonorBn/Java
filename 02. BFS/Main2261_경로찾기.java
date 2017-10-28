@@ -5,8 +5,12 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
-  
-public class Main2261_°æ·ÎÃ£±â {
+
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1522&sca=50&sfl=wr_hit&stx=2261&sop=and
+*/
+
+public class Main2261_ê²½ë¡œì°¾ê¸° {
       
     static int n;
     static int k;
