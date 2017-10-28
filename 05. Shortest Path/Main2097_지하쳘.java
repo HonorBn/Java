@@ -6,21 +6,25 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Main2097_ÁöÇÏ«x_Solution {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1360&sca=50&sfl=wr_hit&stx=2097&sop=and
+*/
+
+public class Main2097_ì§€í•˜ì²  {
 	
 	static class Vertex implements Comparable<Vertex> {
 		
-		int vertex; // ¿ì¸®°¡ ÇÊ¿äÇÑ °Ç ³ëµå¹øÈ£
-		int distance; // distance´Â PriorityQueue ¾È¿¡¼­ ÃÖ¼Ò°ªÀ» pollÇÏ±â À§ÇØ ÇÊ¿äÇÔ
+		int vertex; // ìš°ë¦¬ê°€ í•„ìš”í•œ ê±´ ë…¸ë“œë²ˆí˜¸
+		int distance; // distanceëŠ” PriorityQueue ì•ˆì—ì„œ ìµœì†Œê°’ì„ pollí•˜ê¸° ìœ„í•´ í•„ìš”í•¨
 		public Vertex(int vertex, int distance) {
 			this.vertex = vertex;
 			this.distance = distance;
 		}
 		public String toString() {
 			StringBuilder builder = new StringBuilder();
-			builder.append("Á¤Á¡ : ");
+			builder.append("ì •ì  : ");
 			builder.append(vertex);
-			builder.append(", °Å¸® : ");
+			builder.append(", ê±°ë¦¬ : ");
 			builder.append(distance);
 			return builder.toString();
 		}
@@ -41,7 +45,7 @@ public class Main2097_ÁöÇÏ«x_Solution {
 		boolean[] visited = new boolean[n];
 		int[] pre=new int[n];
 		final int INF = 99999;
-		PriorityQueue<Vertex> queue = new PriorityQueue<>();	// ¹æ¹®ÇÏÁö ¾ÊÀº ³ëµå offer
+		PriorityQueue<Vertex> queue = new PriorityQueue<>();	// ë°©ë¬¸í•˜ì§€ ì•Šì€ ë…¸ë“œ offer
 
 		for (int i = 0; i < n; i++) {
 			st = new StringTokenizer(in.readLine());
@@ -61,9 +65,9 @@ public class Main2097_ÁöÇÏ«x_Solution {
 			if (nextVertex.vertex == end) break;
 			visited[nextVertex.vertex] = true;
 
-			// b´Ü°è : a´Ü°è¿¡¼­ ¼±ÅÃµÈ °æ¿ìÁöÀÇ ¹Ì¹æ¹® ÀÎÁ¢ Á¤Á¡µé¿¡ ´ëÇØ Ã³¸®
+			// bë‹¨ê³„ : aë‹¨ê³„ì—ì„œ ì„ íƒëœ ê²½ìš°ì§€ì˜ ë¯¸ë°©ë¬¸ ì¸ì ‘ ì •ì ë“¤ì— ëŒ€í•´ ì²˜ë¦¬
 			for (int j = 0; j < n; j++) {
-				// ¹Ì¹æ¹® Á¤Á¡ÀÌ¸é¼­ ÀÎÁ¢ Á¤Á¢ÀÇ °æ¿ì
+				// ë¯¸ë°©ë¬¸ ì •ì ì´ë©´ì„œ ì¸ì ‘ ì •ì ‘ì˜ ê²½ìš°
 				if (!visited[j] && input[nextVertex.vertex][j] != 0) {
 					if (nextVertex.distance + input[nextVertex.vertex][j] < distance[j]) {
 						distance[j] = nextVertex.distance + input[nextVertex.vertex][j];
@@ -75,7 +79,7 @@ public class Main2097_ÁöÇÏ«x_Solution {
 			
 		}
 		
-//		for (int i = 0; i < n; i++) { // a´Ü°è:¹Ì¹æ¹® Á¤Á¡ Áß ÃÖ¼Ò ÅäÅ» °¡ÁßÄ¡°ª(ÃÖÀûÈ­ °ª)À» °®´Â °æÀ¯Áö Ã£±â
+//		for (int i = 0; i < n; i++) { // aë‹¨ê³„:ë¯¸ë°©ë¬¸ ì •ì  ì¤‘ ìµœì†Œ í† íƒˆ ê°€ì¤‘ì¹˜ê°’(ìµœì í™” ê°’)ì„ ê°–ëŠ” ê²½ìœ ì§€ ì°¾ê¸°
 //			 
 //			int min = INF;
 //			int nextNode = 0;
@@ -93,9 +97,9 @@ public class Main2097_ÁöÇÏ«x_Solution {
 //				break;
 //			}
 //
-//			// b´Ü°è : a´Ü°è¿¡¼­ ¼±ÅÃµÈ °æ¿ìÁöÀÇ ¹Ì¹æ¹® ÀÎÁ¢ Á¤Á¡µé¿¡ ´ëÇØ Ã³¸®
+//			// bë‹¨ê³„ : aë‹¨ê³„ì—ì„œ ì„ íƒëœ ê²½ìš°ì§€ì˜ ë¯¸ë°©ë¬¸ ì¸ì ‘ ì •ì ë“¤ì— ëŒ€í•´ ì²˜ë¦¬
 //			for (int j = 0; j < n; j++) {
-//				// ¹Ì¹æ¹® Á¤Á¡ÀÌ¸é¼­ ÀÎÁ¢ Á¤Á¢ÀÇ °æ¿ì
+//				// ë¯¸ë°©ë¬¸ ì •ì ì´ë©´ì„œ ì¸ì ‘ ì •ì ‘ì˜ ê²½ìš°
 //				if (!visited[j] && input[nextNode][j] != 0) {
 //					if (distance[nextNode] + input[nextNode][j] < distance[j]) {
 //						distance[j] = distance[nextNode] + input[nextNode][j];
