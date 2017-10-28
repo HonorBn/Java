@@ -27,7 +27,7 @@ import java.util.StringTokenizer;
 #2 -1
 */
 
-public class Solution2105_디저트카페 {
+public class Solution2105_디저트카페_ING {
 	
 	static BufferedReader br;
 	static StringBuilder result;
