@@ -3,22 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* ภิทย ตฅภฬลอ
-10
-5 50
-4 40
-3 30
-2 20
-1 10
-1 10
-2 20
-3 30
-4 40
-5 50
+/* URL
+   https://www.acmicpc.net/problem/14501
+*/
 
- */
-
-public class Main14501_ล๐ป็_น้มุ {
+public class Main14501_ํด์ฌ {
 	
 	static int n, maxBenefit, benefits[][];
 	
