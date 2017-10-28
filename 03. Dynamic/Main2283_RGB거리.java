@@ -3,7 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main2283_RGB∞≈∏Æ_πÈ¡ÿ {
+/* URL
+   https://www.acmicpc.net/problem/1149
+*/
+
+public class Main2283_RGBÍ±∞Î¶¨ {
 	
 	static int n;
 	static int[] cost;
