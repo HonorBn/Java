@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-public class Main4195_模备匙飘况农_归霖 {
+https://www.acmicpc.net/problem/4195
+
+public class Main4195_旃滉惮雱ろ姼鞗岉伂 {
 	
 	static int network[];
 	
