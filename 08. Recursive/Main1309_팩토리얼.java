@@ -2,33 +2,23 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main1309_ÆÑÅä¸®¾ó {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=589&sca=50&sfl=wr_hit&stx=1309&sop=and
+*/
+
+public class Main1309_íŒ©í† ë¦¬ì–¼ {
 	
 	public static void main(String[] args) throws IOException {
     	
-    	// Reader
-    	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    	
-//    	// ÁÖ¾îÁø ¼ıÀÚ Å©±â ¹è¿­
-    	int n = Integer.parseInt(br.readLine().trim());
-//    	int[] num = new int[n];
-    	
-//    	// Tokenizer
-//    	StringTokenizer st = new StringTokenizer(br.readLine());
-    	
-//    	// ¼ıÀÚ 2°³
-//    	int a = Integer.parseInt(st.nextToken());
-//    	int b = Integer.parseInt(st.nextToken());
-    	
-//    	// ÁÖ¾îÁø ¼ıÀÚ ¹è¿­ ÀÔ·Â
-//    	for (int i = 0; i < n; i++) {
-//    		num[i] = Integer.parseInt(st.nextToken());
-//    	}
-    	
-    	System.out.println(fun(n));
-    }
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		int n = Integer.parseInt(br.readLine().trim());
+
+		System.out.println(fun(n));
+    	}
 	
 	public static long fun(int n) {
+		
 		if (n == 0) return 1;
 		else if (n == 1) System.out.printf("%d! = %d\n", n, n);
 		else System.out.printf("%d! = %d * %d!\n", n, n, n-1);
