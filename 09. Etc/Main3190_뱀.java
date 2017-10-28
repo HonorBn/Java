@@ -4,19 +4,11 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-/* ¿‘∑¬ µ•¿Ã≈Õ
-6
-3
-3 4
-2 5
-5 3
-3
-3 D
-15 L
-17 D
- */
+/* URL
+   https://www.acmicpc.net/problem/3190
+*/
 
-public class Main3190_πÏ {
+public class Main3190_Î±Ä {
 	
 	static int n, k, l, resCnt, map[][], move[][];
 	static HashMap<Integer, Boolean> turns;
