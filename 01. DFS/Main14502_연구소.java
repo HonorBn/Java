@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
    https://www.acmicpc.net/problem/14502
 */
 
-public class Main14502_ {
+public class Main14502_연구소 {
 	
 	static int n, m, maxSafe, map[][], dir[][];
 	static ArrayList<int[]> virus;
