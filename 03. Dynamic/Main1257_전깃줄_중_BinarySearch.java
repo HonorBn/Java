@@ -5,13 +5,17 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-public class Main1257_Àü±êÁÙ_Áß_BinarySearch {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=540&sca=50&sfl=wr_hit&stx=1257&sop=and
+*/
+
+public class Main1257_ì „ê¹ƒì¤„_ì¤‘_BinarySearch {
 	
 	static int n, size, lineB[], path[], dynamic[], dynamicIndex[];
 	static Integer lines[][];
 	
-	// ¸Å¹ø lineBÀÇ ÀÎµ¦½º¸¦ ÀúÀå
-	// °æ·Î ÃßÀû : BinarySearch °ªÀÌ -1º¸´Ù ÀÛÀ» ¶§, 
+	// ë§¤ë²ˆ lineBì˜ ì¸ë±ìŠ¤ë¥¼ ì €ì¥
+	// ê²½ë¡œ ì¶”ì  : BinarySearch ê°’ì´ -1ë³´ë‹¤ ì‘ì„ ë•Œ, 
 	
 	public static void main(String[] args) throws IOException {
 		
@@ -57,9 +61,9 @@ public class Main1257_Àü±êÁÙ_Áß_BinarySearch {
 			temp = Arrays.binarySearch(dynamic, 0, size, lineB[i]);
 			insert = -1 * temp - 1;
 			dynamic[insert] = lineB[i];
-			dynamicIndex[insert] = i;	// °æ·Î ÃßÀûÀ» À§ÇÑ ÀúÀå
+			dynamicIndex[insert] = i;	// ê²½ë¡œ ì¶”ì ì„ ìœ„í•œ ì €ì¥
 			if (insert == size) size++;
-			if (temp < -1) path[i] = dynamicIndex[insert-1];	// ³ª¸¦ ÀÖ°Ô ÇÑ Á÷Àü ³ğÀÇ À§Ä¡ ±â¾ï
+			if (temp < -1) path[i] = dynamicIndex[insert-1];	// ë‚˜ë¥¼ ìˆê²Œ í•œ ì§ì „ ë†ˆì˜ ìœ„ì¹˜ ê¸°ì–µ
 		}
 		
 	}
