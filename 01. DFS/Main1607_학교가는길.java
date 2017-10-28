@@ -3,7 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main1607_ÇĞ±³°¡´Â±æ {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=880&sca=50&sfl=wr_hit&stx=1607&sop=and
+*/
+
+public class Main1607_í•™êµê°€ëŠ”ê¸¸ {
 	
 	static int r, c, k, cnt, map[][], dir[][];
 	
@@ -43,9 +47,9 @@ public class Main1607_ÇĞ±³°¡´Â±æ {
 			for (int j = 0; j < c; j++) {
 				if ((i == 0 && j == 0) || map[i][j] == -1) continue;
 				temp = 0;
-				for (int from = 0; from < 2; from++) {	// [ÁÂÃø¿¡¼­ ¿À´Â °æ¿ì] ÁÂÃø ÁÂÇ¥ µµÂø °æ¿ìÀÇ¼ö
+				for (int from = 0; from < 2; from++) {	// [ì¢Œì¸¡ì—ì„œ ì˜¤ëŠ” ê²½ìš°] ì¢Œì¸¡ ì¢Œí‘œ ë„ì°© ê²½ìš°ì˜ìˆ˜
 					fromR = i + dir[from][0];			// 				+
-					fromC = j + dir[from][1];			// [»óÃø¿¡¼­ ¿À´Â °æ¿ì] »óÃø ÁÂÇ¥ µµÂø °æ¿ìÀÇ ¼ö
+					fromC = j + dir[from][1];			// [ìƒì¸¡ì—ì„œ ì˜¤ëŠ” ê²½ìš°] ìƒì¸¡ ì¢Œí‘œ ë„ì°© ê²½ìš°ì˜ ìˆ˜
 					if (fromR >= 0 && fromC >= 0 && map[fromR][fromC] != -1) {
 						temp += map[fromR][fromC];
 					}
