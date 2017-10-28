@@ -7,21 +7,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-7 6
-8
-1 2 1 2 2
-2 1 1 5 1
-6 7 3 7 6
-7 2 1 2 6
-3 3 2 6 2
-4 5 6 5 1
-5 1 5 7 5
-8 3 5 6 5
-2 1 7 4
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1839&sca=50&sfl=wr_hit&stx=2578&sop=and
+*/
 
-public class Main2578_¹ö½º°¥¾ÆÅ¸±â {
+public class Main2578_ë²„ìŠ¤ê°ˆì•„íƒ€ê¸° {
 	
 	static int Cnt;
 	static Bus[] lines;
