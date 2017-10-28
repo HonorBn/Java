@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
    https://www.acmicpc.net/problem/7569
 */
 
-public class Main2613_토마토 {
+public class Main7569_토마토 {
 
 	public static void main(String[] args) throws IOException {
 		
