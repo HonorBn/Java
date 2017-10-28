@@ -3,16 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/*
-5
-1 2
-2 4
-1 3
-3 1
-4 3
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=388&sca=50&sfl=wr_hit&stx=1108&sop=and
+*/
 
-public class Main1108_ÆäÀÌÁöÀüÈ¯_Floyd_Warshall {
+public class Main1108_íŽ˜ì´ì§€ì „í™˜_Floyd_Warshall {
 
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -29,7 +24,7 @@ public class Main1108_ÆäÀÌÁöÀüÈ¯_Floyd_Warshall {
         	page1 = Integer.parseInt(st.nextToken());
         	page2 = Integer.parseInt(st.nextToken());
         	
-        	// ¸¶Áö¸· ÆäÀÌÁö Ã£±â
+        	// ë§ˆì§€ë§‰ íŽ˜ì´ì§€ ì°¾ê¸°
         	if((max=Math.max(page1, page2))>endPage){
         		endPage = max;
         	}
@@ -51,33 +46,33 @@ public class Main1108_ÆäÀÌÁöÀüÈ¯_Floyd_Warshall {
         }
         
         
-        // ÀÌµ¿°¡´ÉÇÑ ÆäÀÌÁö´Â 1·Î.
+        // ì´ë™ê°€ëŠ¥í•œ íŽ˜ì´ì§€ëŠ” 1ë¡œ.
         for(int[] a : info){
         	matrix[a[0]][a[1]] = 1;
         }       
-        // °¥¼ö¾ø´Â °÷Àº INFINITY·Î. °¥¼ö ÀÖ´Â °÷Àº 1·Î, I==JÀÎ °æ¿ì´Â 0À¸·Î ¼ÂÆÃ¿Ï·á
+        // ê°ˆìˆ˜ì—†ëŠ” ê³³ì€ INFINITYë¡œ. ê°ˆìˆ˜ ìžˆëŠ” ê³³ì€ 1ë¡œ, I==Jì¸ ê²½ìš°ëŠ” 0ìœ¼ë¡œ ì…‹íŒ…ì™„ë£Œ
 /*  
         for(int i=0; i<matrix.length; ++i){
         	System.out.println(Arrays.toString(matrix[i]));
         }
         System.out.println("==================================");*/
         
-        // Ãâ¹ßÁö-->°æÀ¯Áö-->¸ñÀûÁö·Î 3Áß ·çÇÁ µ¹¸®¸é ¿À´ä
-        // °æÀ¯Áö-->Ãâ¹ßÁö-->¸ñÀûÁö·Î 3Áß ·çÇÁ µ¹·Á¾ß Á¤´ä
-		for (int k = 1; k <= endPage; k++) { // °æÀ¯Áö
-	START_LOOP:	for (int i = 1; i <= endPage; i++) { // Ãâ¹ßÁö
-				for (int j = 1; j <= endPage; j++) { // ¸ñÀûÁö
+        // ì¶œë°œì§€-->ê²½ìœ ì§€-->ëª©ì ì§€ë¡œ 3ì¤‘ ë£¨í”„ ëŒë¦¬ë©´ ì˜¤ë‹µ
+        // ê²½ìœ ì§€-->ì¶œë°œì§€-->ëª©ì ì§€ë¡œ 3ì¤‘ ë£¨í”„ ëŒë ¤ì•¼ ì •ë‹µ
+		for (int k = 1; k <= endPage; k++) { // ê²½ìœ ì§€
+	START_LOOP:	for (int i = 1; i <= endPage; i++) { // ì¶œë°œì§€
+				for (int j = 1; j <= endPage; j++) { // ëª©ì ì§€
 					
-					if(i==k){//Ãâ¹ßÁö¿Í °æÀ¯Áö°¡ °°À¸¸é
-							 //°æÀ¯ÇÏ´Â °ÍÀ¸·Î ÀÎÇÑ UPDATE°¡ ÇÊ¿ä¾øÀ¸¹Ç·Î ´ÙÀ½ Ãâ¹ßÁö·Î.
+					if(i==k){//ì¶œë°œì§€ì™€ ê²½ìœ ì§€ê°€ ê°™ìœ¼ë©´
+							 //ê²½ìœ í•˜ëŠ” ê²ƒìœ¼ë¡œ ì¸í•œ UPDATEê°€ í•„ìš”ì—†ìœ¼ë¯€ë¡œ ë‹¤ìŒ ì¶œë°œì§€ë¡œ.
 						continue START_LOOP;
 					}
-					if(i==j || j==k){ //Ãâ¹ßÁö¿Í ¸ñÀûÁö°¡ °°´Ù¸é ÀÚ±âÀÚ½ÅÀ¸·ÎÀÓ
-									 // °æÀ¯Áö¿Í µµÂøÁö°¡ °°À¸¸é skip
+					if(i==j || j==k){ //ì¶œë°œì§€ì™€ ëª©ì ì§€ê°€ ê°™ë‹¤ë©´ ìžê¸°ìžì‹ ìœ¼ë¡œìž„
+									 // ê²½ìœ ì§€ì™€ ë„ì°©ì§€ê°€ ê°™ìœ¼ë©´ skip
 						continue;
 					}
-					// Ãâ¹ßÁö(i)¿¡¼­ ¸ñÀûÁö(j)±îÁö ¿À´Â ±âÁ¸°Å¸®°¡ Ãâ¹ßÁö(i)¿¡¼­ ¸ñÀûÁö(j)±îÁö °æÀ¯Áö(k)¸¦ °ÅÃÄ
-					// ¿À´Â °Å¸®º¸´Ù Å©´Ù¸é °»½Å(Áï, °æÀ¯Áö¸¦ °ÅÃÄ ¿À´Â°ÍÀÌ ÀÛ´Ù¸é °»½Å)
+					// ì¶œë°œì§€(i)ì—ì„œ ëª©ì ì§€(j)ê¹Œì§€ ì˜¤ëŠ” ê¸°ì¡´ê±°ë¦¬ê°€ ì¶œë°œì§€(i)ì—ì„œ ëª©ì ì§€(j)ê¹Œì§€ ê²½ìœ ì§€(k)ë¥¼ ê±°ì³
+					// ì˜¤ëŠ” ê±°ë¦¬ë³´ë‹¤ í¬ë‹¤ë©´ ê°±ì‹ (ì¦‰, ê²½ìœ ì§€ë¥¼ ê±°ì³ ì˜¤ëŠ”ê²ƒì´ ìž‘ë‹¤ë©´ ê°±ì‹ )
 					if (matrix[i][k] + matrix[k][j] < matrix[i][j]) {
 						matrix[i][j] = matrix[i][k] + matrix[k][j];
 					}
@@ -91,8 +86,8 @@ public class Main1108_ÆäÀÌÁöÀüÈ¯_Floyd_Warshall {
         */
          
         double sum = 0;
-        //¾î¶² ÆäÀÌÁö¿¡¼­ ´Ù¸¥ ÆäÀÌÁö·Î °¥ ¼ö ¾ø´Â °æ¿ì´Â ¾øµµ·Ï µ¥ÀÌÅÍ°¡ ÀÔ·ÂµÈ´Ù°í ÇßÀ¸¹Ç·Î
-        //°á±¹ ´Ù¸¥ ÆäÀÌÁöµéÀ» ¸ðµÎ °æ¿ìÁö·Î °í·ÁÇßÀ» °æ¿ì matrixÀÇ ¸ðµç °ªÀº 0°ú 0ÀÌ ¾Æ´Ñ°ªÀ¸·Î Ã¤¿öÁü
+        //ì–´ë–¤ íŽ˜ì´ì§€ì—ì„œ ë‹¤ë¥¸ íŽ˜ì´ì§€ë¡œ ê°ˆ ìˆ˜ ì—†ëŠ” ê²½ìš°ëŠ” ì—†ë„ë¡ ë°ì´í„°ê°€ ìž…ë ¥ëœë‹¤ê³  í–ˆìœ¼ë¯€ë¡œ
+        //ê²°êµ­ ë‹¤ë¥¸ íŽ˜ì´ì§€ë“¤ì„ ëª¨ë‘ ê²½ìš°ì§€ë¡œ ê³ ë ¤í–ˆì„ ê²½ìš° matrixì˜ ëª¨ë“  ê°’ì€ 0ê³¼ 0ì´ ì•„ë‹Œê°’ìœ¼ë¡œ ì±„ì›Œì§
         for (int i = 1; i <= endPage; i++) {
             for (int j = 1; j <= endPage; j++) {
                 sum+=matrix[i][j];
