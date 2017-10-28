@@ -6,14 +6,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-5 7 3
-0 2 4 4
-1 1 2 5
-4 0 6 2
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=729&sca=50&sfl=wr_hit&stx=1457
+*/
 
-public class Main1457_¿µ¿ª±¸ÇÏ±â {
+public class Main1457_ì˜ì—­êµ¬í•˜ê¸° {
 	
 	static int m, n, k, cnt, cell, dir[][], square[][];
 	static ArrayList<Integer> res;
