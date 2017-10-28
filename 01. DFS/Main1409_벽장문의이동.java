@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /* URL
-   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=685&sca=50&sfl=wr_hit&stx=1409
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=685&sca=50&sfl=wr_hit&stx=1409&sop=and
 */
 
 public class Main1409_벽장문의이동 {
