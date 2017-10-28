@@ -3,7 +3,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main1021_장난감조립 {
+/*
+* 정올
+  1021 장난감조립
+* URL
+  http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=300&sca=50&sfl=wr_hit&stx=1021
+*/
+
+public class Main {
 	
 	static int n, m;		// 부품 종류 수, 부품 조합 가짓수
 	static int[][] parts;		// 부품별 제작에 필요한 부품 종류와 개수
