@@ -3,24 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* 입력 데이터
-13 12
-0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 1 1 0 0 0
-0 1 1 1 0 0 0 1 1 0 0 0
-0 1 1 1 1 1 1 0 0 0 0 0
-0 1 1 1 1 1 0 1 1 0 0 0
-0 1 1 1 1 0 0 1 1 0 0 0
-0 0 1 1 0 0 0 1 1 0 0 0
-0 0 1 1 1 1 1 1 1 0 0 0
-0 0 1 1 1 1 1 1 1 0 0 0
-0 0 1 1 1 1 1 1 1 0 0 0
-0 0 1 1 1 1 1 1 1 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1113&sca=50&sfl=wr_hit&stx=1840&sop=and
+*/
 
-public class Main1840_치즈 {
+public class Main1840_ {
      
     static int n, m, cnt, time;
     static int[][] dir = { {-1,0}, {1,0}, {0,-1}, {0,1} };
