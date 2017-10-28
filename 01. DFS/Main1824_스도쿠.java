@@ -5,19 +5,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-0 3 5 4 6 9 2 7 8
-7 8 2 1 0 5 6 0 9
-0 6 0 2 7 8 1 3 5
-3 2 1 0 4 6 8 9 7
-8 0 4 9 1 3 5 0 6
-5 9 6 8 2 0 4 1 3
-9 1 7 6 5 2 0 8 0
-6 0 3 7 0 1 9 5 2
-2 5 8 3 9 4 7 6 0
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1097&sca=50&sfl=wr_hit&stx=1824&sop=and
+*/
 
-public class Main1824_½ºµµÄí {
+public class Main1824_ìŠ¤ë„ì¿  {
 	
 	static boolean flag;
 	static int[][] board = new int[9][9];
