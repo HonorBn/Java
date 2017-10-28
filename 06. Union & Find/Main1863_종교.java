@@ -4,7 +4,11 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main1863_¡æ±≥ {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1136&sca=50&sfl=wr_hit&stx=1863&sop=and
+*/
+
+public class Main1863_Ï¢ÖÍµê {
 
 	static int n, m, religions[], inputs[][];
 
