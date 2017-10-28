@@ -6,18 +6,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-/*
-7 7
-2 0 0 0 1 1 0
-0 0 1 0 1 2 0
-0 1 1 0 1 0 0
-0 1 0 0 0 0 0
-0 0 0 0 0 1 1
-0 1 0 0 0 0 0
-0 1 0 0 0 0 0
- */
+/* URL
+   https://www.acmicpc.net/problem/14502
+*/
 
-public class Main14502_연구소_백준 {
+public class Main14502_ {
 	
 	static int n, m, maxSafe, map[][], dir[][];
 	static ArrayList<int[]> virus;
