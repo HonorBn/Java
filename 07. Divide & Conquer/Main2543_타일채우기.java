@@ -3,12 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-8
-2 3
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1804&sca=50&sfl=wr_hit&stx=2543&sop=and
+*/
 
-public class Main2543_Å¸ÀÏÃ¤¿ì±â {
+public class Main2543_íƒ€ì¼ì±„ìš°ê¸° {
 	
 	static int n;
 	static int[] hole;
@@ -37,13 +36,13 @@ public class Main2543_Å¸ÀÏÃ¤¿ì±â {
 						 Integer.parseInt(st.nextToken())};
 	}
 	
-	// »çºĞ¸é ¼ø¼­
+	// ì‚¬ë¶„ë©´ ìˆœì„œ
 	// 1 2
 	// 3 4
-	// row, col : ¹Ù´Ú ÁÂ»ó´Ü ÁÂÇ¥ /  len : ¹Ù´Ú ¸é ±æÀÌ /  x, y : ±¸¸Û(¶Ç´Â Å¸ÀÏ) ÁÂÇ¥
+	// row, col : ë°”ë‹¥ ì¢Œìƒë‹¨ ì¢Œí‘œ /  len : ë°”ë‹¥ ë©´ ê¸¸ì´ /  x, y : êµ¬ë©(ë˜ëŠ” íƒ€ì¼) ì¢Œí‘œ
 	private static void divideTile(int row, int col, int len, int x, int y) {
 		
-		// Å»ÃâÇÏ±â
+		// íƒˆì¶œí•˜ê¸°
 		if (len == 1) return;
 		
 		int half = len / 2;
