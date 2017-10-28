@@ -3,13 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-5
-1000000 1000000 1000000 1000000 1000000
-5 7
- */
+/* URL
+   https://www.acmicpc.net/problem/13458
+*/
 
-public class Main13458_½ÃÇè°¨µ¶ {
+public class Main13458_ì‹œí—˜ê°ë… {
 	
 	static int n, monitor1, monitor2, students[];
 	static long monitors;
