@@ -4,7 +4,11 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main1060_ÃÖ¼Òºñ¿ë½ÅÀåÆ®¸® {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=340&sca=50&sfl=wr_hit&stx=1060&sop=and
+*/
+
+public class Main1060_ìµœì†Œë¹„ìš©ì‹ ì¥íŠ¸ë¦¬ {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader in = new BufferedReader(
@@ -32,8 +36,8 @@ public class Main1060_ÃÖ¼Òºñ¿ë½ÅÀåÆ®¸® {
 			min = Integer.MAX_VALUE;
 			minIndex=-1;
 			
-			for (Integer i : list) {//¹æ¹®Á¤Á¡ ÀÎµ¦½º
-				for(int j=0; j<n; ++j){// ÇØ´ç ¹æ¹®Á¤Á¡ ±âÁØÀÇ ÀÎÁ¢ Á¤Á¡ Ã¼Å©
+			for (Integer i : list) {//ë°©ë¬¸ì •ì  ì¸ë±ìŠ¤
+				for(int j=0; j<n; ++j){// í•´ë‹¹ ë°©ë¬¸ì •ì  ê¸°ì¤€ì˜ ì¸ì ‘ ì •ì  ì²´í¬
 					if(!visited[j] && input[i][j] != 0 
 							&& input[i][j] < min){
 						min = input[i][j];
