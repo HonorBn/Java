@@ -5,7 +5,11 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-public class Main1408_Àü±êÁÙ_ÃÊ_lis {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=684&sca=50&sfl=wr_hit&stx=1408&sop=and
+*/
+
+public class Main1408_ì „ê¹ƒì¤„_ì´ˆ_lis {
 	
 	static int n, dynamic[];
 	static Integer lines[][];
