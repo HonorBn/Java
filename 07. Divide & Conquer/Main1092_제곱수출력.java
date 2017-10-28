@@ -3,11 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-2 10
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=372&sca=50&sfl=wr_hit&stx=1092&sop=and
+*/
 
-public class Main1092_Á¦°ö¼öÃâ·Â {
+public class Main1092_ì œê³±ìˆ˜ì¶œë ¥ {
 	
 	static long x, y, result;
 	static final int DIVIDER = 20091024;
