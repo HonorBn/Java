@@ -2,14 +2,18 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main1053_ÇÇº¸³ªÄ¡ {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=332&sca=50&sfl=wr_hit&stx=1053&sop=and
+*/
+
+public class Main1053_í”¼ë³´ë‚˜ì¹˜ {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int n = 0;
-		while ( (n = Integer.parseInt(br.readLine().trim())) != -1) {  // Á¶°Ç¹®¿¡ ¼±¾ğ ´ëÀÔ »ç¿ë ÀÍÈ÷±â!!
+		while ( (n = Integer.parseInt(br.readLine().trim())) != -1) {  // ì¡°ê±´ë¬¸ì— ì„ ì–¸ ëŒ€ì… ì‚¬ìš© ìµíˆê¸°!!
 			
 			if  (n == 0) {
 				System.out.println(0);
@@ -22,7 +26,7 @@ public class Main1053_ÇÇº¸³ªÄ¡ {
 		
 	}
 	
-	// ¸Ş¸ğÇÏ±â ¹æ¹ı
+	// ë©”ëª¨í•˜ê¸° ë°©ë²•
 	static int[] memo = null;
 	public static int fivonacci1(int n) {
 		if (n == 1 || n == 2) return 1;
