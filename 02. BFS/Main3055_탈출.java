@@ -6,14 +6,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-3 6
-D...*.
-.X.X..
-....S.
- */
+/* URL
+   https://www.acmicpc.net/problem/3055
+*/
 
-public class Main3055_Å»Ãâ_¹éÁØ {
+public class Main3055_íƒˆì¶œ {
 	
 	static boolean alive;
 	static boolean[][] visit;
@@ -128,7 +125,7 @@ class Flood {
 	}
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("È«¼ö [");
+		builder.append("í™ìˆ˜ [");
 		builder.append(row);
 		builder.append(", ");
 		builder.append(col);
@@ -145,7 +142,7 @@ class Hog extends Flood {
 	}
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("µµÄ¡ [");
+		builder.append("ë„ì¹˜ [");
 		builder.append(row);
 		builder.append(", ");
 		builder.append(col);
