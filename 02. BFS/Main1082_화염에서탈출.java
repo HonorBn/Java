@@ -5,7 +5,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main1082_È­¿°¿¡¼­Å»Ãâ {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=362&sca=50&sfl=wr_hit&stx=1082&sop=and
+*/
+
+public class Main1082_í™”ì—¼ì—ì„œíƒˆì¶œ {
 	
 	static int r, c;
 	static int[] start, end;
