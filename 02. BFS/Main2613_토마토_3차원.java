@@ -4,7 +4,11 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Main2613_Åä¸¶Åä_3Â÷¿ø {
+/* URL
+   https://www.acmicpc.net/problem/7569
+*/
+
+public class Main2613_í† ë§ˆí†  {
 
 	public static void main(String[] args) throws IOException {
 		
