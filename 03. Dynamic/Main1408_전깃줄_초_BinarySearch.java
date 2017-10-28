@@ -5,7 +5,11 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-public class Main1408_¿¸±Í¡Ÿ_√ _BinarySearch {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=684&sca=50&sfl=wr_hit&stx=1408&sop=and
+*/
+
+public class Main1408_Ï†ÑÍπÉÏ§Ñ_Ï¥à_BinarySearch {
 	
 	static int n, size, lineB[], dynamic[];
 	static Integer lines[][];
