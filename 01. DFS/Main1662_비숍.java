@@ -3,19 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* 입력 데이터
-5 
-1 1 0 1 1 
-0 1 0 0 0 
-1 0 1 0 1 
-1 0 0 0 0 
-1 0 1 1 1
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=935&sca=50&sfl=wr_hit&stx=1662&sop=and
+*/
 
-// 가지치기 : 나머지 대각선을 모두 채워도 현재 resCnt에 못 미치는 경우
-// if (cnt <= leftIndex - (maxCnt-resCnt)) return;		>> 검흰 나누는 게 더 파워풀 가지치기.. why?
-
-public class Main1662_비숍 {
+public class Main1662_鍮꾩닄 {
 	
 	static int n, maxCnt, whiteCnt, blackCnt, leftNum[];
 	static boolean rightCheck[], possibles[][];
