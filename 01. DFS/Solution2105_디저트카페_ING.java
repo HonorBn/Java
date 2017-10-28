@@ -3,6 +3,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/* URL
+   SW Expert Academy
+*/
+
 /* Input
 2              
 4                
@@ -23,7 +27,7 @@ import java.util.StringTokenizer;
 #2 -1
 */
 
-public class Solution2105_µðÀúÆ®Ä«Æä_ING {
+public class Solution2105_ë””ì €íŠ¸ì¹´íŽ˜ {
 	
 	static BufferedReader br;
 	static StringBuilder result;
