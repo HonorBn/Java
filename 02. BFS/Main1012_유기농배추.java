@@ -5,7 +5,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main1012_유기농배추_백준 {
+/* URL
+   https://www.acmicpc.net/problem/1012
+*/
+
+public class Main1012_유기농배추 {
 	
 	static BufferedReader br;
 	static StringBuilder result;
