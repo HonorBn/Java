@@ -3,17 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-7
-2 5
-4
-3
-1
-6
-5
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=685&sca=50&sfl=wr_hit&stx=1409
+*/
 
-public class Main1409_º®Àå¹®ÀÇÀÌµ¿ {
+public class Main1409_ë²½ì¥ë¬¸ì˜ì´ë™ {
 	
 	static int n, k, resCnt, openL, openR, openSeq[];
 	
@@ -29,7 +23,7 @@ public class Main1409_º®Àå¹®ÀÇÀÌµ¿ {
 	
 	private static void input() throws IOException {
 		
-		resCnt = 400;	// º®Àå ÃÖ´ë 20°³ »ç¿ë * º®Àå¹® ÃÖ´ë 20È¸ ÀÌµ¿
+		resCnt = 400;	// ë²½ì¥ ìµœëŒ€ 20ê°œ ì‚¬ìš© * ë²½ì¥ë¬¸ ìµœëŒ€ 20íšŒ ì´ë™
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		n = Integer.parseInt(br.readLine().trim());
