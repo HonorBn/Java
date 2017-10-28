@@ -5,7 +5,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main1462_º¸¹°¼¶ {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=734&sca=50&sfl=wr_hit&stx=1462&sop=and
+*/
+
+public class Main1462_ë³´ë¬¼ì„¬ {
 	
 	static int r, c, time, maxTime;
 	static int[][] map;
@@ -25,7 +29,7 @@ public class Main1462_º¸¹°¼¶ {
 	    map = new int[r][c];
 	    
 	    char[] line = null;
-	    for (int i = 0; i < r; i++) {				// °æ°ú½Ã°£À» map¿¡ Ç¥½ÃÇÏ±â ¶§¹®¿¡ W´Â -1·Î
+	    for (int i = 0; i < r; i++) {				// ê²½ê³¼ì‹œê°„ì„ mapì— í‘œì‹œí•˜ê¸° ë•Œë¬¸ì— WëŠ” -1ë¡œ
 	    	line = br.readLine().toCharArray();
 	    	for (int j = 0; j < c; j++) {
 	    		switch (line[j]) {
@@ -39,11 +43,11 @@ public class Main1462_º¸¹°¼¶ {
 	    	}
 	    }
 	    
-	    for (int i = 0; i < r; i++) {			// ¸ðµç L¸¶´Ù ¸ðµç L¿¡ µµÂøÇÏ´Â ½Ã°£ °è»ê
+	    for (int i = 0; i < r; i++) {			// ëª¨ë“  Lë§ˆë‹¤ ëª¨ë“  Lì— ë„ì°©í•˜ëŠ” ì‹œê°„ ê³„ì‚°
 	    	for (int j = 0; j < c; j++) {
 	    		if (map[i][j] == 0) {
-	    			mapTemp = new int[r][c];	// ÇÑ L¿¡¼­ path()¸¦ ¼öÇàÇÒ ¶§¸¶´Ù 
-					pathReset();				// map¿¡ °æ°ú½Ã°£ÀÌ ÀûÈ÷±â ¶§¹®¿¡ ¸®¼Â ÇÊ¿ä
+	    			mapTemp = new int[r][c];	// í•œ Lì—ì„œ path()ë¥¼ ìˆ˜í–‰í•  ë•Œë§ˆë‹¤ 
+					pathReset();				// mapì— ê²½ê³¼ì‹œê°„ì´ ì ížˆê¸° ë•Œë¬¸ì— ë¦¬ì…‹ í•„ìš”
 					quePath.offer(new int[]{i, j});
 					mapTemp[i][j] = time = 1;
 					timeCnt();
