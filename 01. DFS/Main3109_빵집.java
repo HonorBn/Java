@@ -3,7 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main3109_ปงมý_น้มุ {
+/* URL
+   https://www.acmicpc.net/problem/3109
+*/
+
+public class Main3109_ {
 	
 	static boolean flag;
 	static int r, c, maxSize, map[][], dir[][];
