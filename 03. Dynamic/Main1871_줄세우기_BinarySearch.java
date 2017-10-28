@@ -3,10 +3,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-//binarysearch ¸®ÅÏ°ª : [-insertionPoint-1][0~n]
-//|[]+1|
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1144&sca=50&sfl=wr_hit&stx=1871&sop=and
+*/
 
-public class Main1871_ÁÙ¼¼¿ì±â_BinarySearch {
+// Arrays.binarySearch  : -insertionPoint-1
+
+public class Main1871_ì¤„ì„¸ìš°ê¸°_BinarySearch {
 
 	public static void main(String[] args) throws IOException {
 		
