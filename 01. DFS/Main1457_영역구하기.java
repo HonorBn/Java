@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.StringTokenizer;
 
 /* URL
-   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=729&sca=50&sfl=wr_hit&stx=1457
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=729&sca=50&sfl=wr_hit&stx=1457&sop=and
 */
 
 public class Main1457_영역구하기 {
