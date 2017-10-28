@@ -2,7 +2,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main1894_°è´Ü¿À¸£±â2 {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1167&sca=50&sfl=wr_hit&stx=1894&sop=and
+*/
+
+public class Main1894_ê³„ë‹¨ì˜¤ë¥´ê¸°2 {
 	
 	static int n, cnt;
 	
