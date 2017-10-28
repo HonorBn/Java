@@ -4,19 +4,23 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main1841_¿ùµåÄÅ {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1114&sca=50&sfl=wr_hit&stx=1841&sop=and
+*/
 
-	static final int n = 6; // ÆÀ¼ö(³ª¶ó ¼ö)
-	static final int m = 15; // 6³ª¶ó Áß 2³ª¶ó¾¿ Ä¡·ç´Â ÃÑ °æ±âÀÇ ¼ö 6C2
+public class Main1841_ì›”ë“œì»µ {
+
+	static final int n = 6; // íŒ€ìˆ˜(ë‚˜ë¼ ìˆ˜)
+	static final int m = 15; // 6ë‚˜ë¼ ì¤‘ 2ë‚˜ë¼ì”© ì¹˜ë£¨ëŠ” ì´ ê²½ê¸°ì˜ ìˆ˜ 6C2
 	static int win[], lose[], draw[];
 	static int tryWin[], tryLose[], tryDraw[];
 	static int player1[], player2[];
 	static boolean feasibility;
 
-	// cnt¿¡ ÇØ´çÇÏ´Â °æ±âÀÇ µÎÆÀ¿¡ ´ëÇØ 3°¡ÁöÀÇ °æ¿ì·Î ½ÃµµÇØº½
-	// °¢ °æ¿ì°¡ °¡´ÉÇÏ´Ù¸é ÇØ´ç °æ¿ì¿¡¼­ ´ÙÀ½ °æ±â·Î Àç±ÍÈ£Ãâ 
+	// cntì— í•´ë‹¹í•˜ëŠ” ê²½ê¸°ì˜ ë‘íŒ€ì— ëŒ€í•´ 3ê°€ì§€ì˜ ê²½ìš°ë¡œ ì‹œë„í•´ë´„
+	// ê° ê²½ìš°ê°€ ê°€ëŠ¥í•˜ë‹¤ë©´ í•´ë‹¹ ê²½ìš°ì—ì„œ ë‹¤ìŒ ê²½ê¸°ë¡œ ì¬ê·€í˜¸ì¶œ 
 	static void recur(int cnt) {
-		if (cnt == m) {// ¸¶Áö¸· °æ±â±îÁö ´Ù °¡´ÉÇß¾ú´Ù¸é 
+		if (cnt == m) {// ë§ˆì§€ë§‰ ê²½ê¸°ê¹Œì§€ ë‹¤ ê°€ëŠ¥í–ˆì—ˆë‹¤ë©´ 
 			feasibility = true;
 			return;
 		}
@@ -28,47 +32,47 @@ public class Main1841_¿ùµåÄÅ {
 		///////////////////////////////////////////////////////////
 		
 		
-		tryWin[p1]++;// player1ÆÀ ÀÌ±â´Â Ã³¸®
-		tryLose[p2]++;//player2ÆÀ Áö´Â Ã³¸®
-		if (tryWin[p1] <= win[p1] && tryLose[p2] <= lose[p2]){ // À§¿¡¼­ Ã³¸®ÇÑ °á°ú°ªÀÌ ±âÀÚ°¡ º¸³»¿Â °á°ú°ªº¸´Ù ÀÛ°Å³ª °°´Ù¸é 
-														// ´ÙÀ½ °æ±âÁ¤º¸µµ °è¼Ó Àç±ÍÈ£Ãâ ÇÏ¿© ½ÃµµÇØº½.
+		tryWin[p1]++;// player1íŒ€ ì´ê¸°ëŠ” ì²˜ë¦¬
+		tryLose[p2]++;//player2íŒ€ ì§€ëŠ” ì²˜ë¦¬
+		if (tryWin[p1] <= win[p1] && tryLose[p2] <= lose[p2]){ // ìœ„ì—ì„œ ì²˜ë¦¬í•œ ê²°ê³¼ê°’ì´ ê¸°ìê°€ ë³´ë‚´ì˜¨ ê²°ê³¼ê°’ë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ë‹¤ë©´ 
+														// ë‹¤ìŒ ê²½ê¸°ì •ë³´ë„ ê³„ì† ì¬ê·€í˜¸ì¶œ í•˜ì—¬ ì‹œë„í•´ë´„.
 			recur(cnt + 1);
-			if(feasibility){ // ¸¶Áö¸· °æ±â±îÁö tryÇÑ °á°ú °¡´ÉÇß´Ù¸é ±âÀÚÀÇ°á°ú °¡´ÉÇÑ °á°úÀÌ¹Ç·Î Àç±Í¸ØÃã.
+			if(feasibility){ // ë§ˆì§€ë§‰ ê²½ê¸°ê¹Œì§€ tryí•œ ê²°ê³¼ ê°€ëŠ¥í–ˆë‹¤ë©´ ê¸°ìì˜ê²°ê³¼ ê°€ëŠ¥í•œ ê²°ê³¼ì´ë¯€ë¡œ ì¬ê·€ë©ˆì¶¤.
 				return;
 			}
 		}
-		tryWin[p1]--; // À§¿¡¼­ Ã³¸®ÇÑ °á°ú µÇµ¹·Á³õÀ½
-		tryLose[p2]--;// À§¿¡¼­ Ã³¸®ÇÑ °á°ú µÇµ¹·Á³õÀ½
+		tryWin[p1]--; // ìœ„ì—ì„œ ì²˜ë¦¬í•œ ê²°ê³¼ ë˜ëŒë ¤ë†“ìŒ
+		tryLose[p2]--;// ìœ„ì—ì„œ ì²˜ë¦¬í•œ ê²°ê³¼ ë˜ëŒë ¤ë†“ìŒ
 		
 		
 		///////////////////////////////////////////////////////////
 		
 		
-		tryDraw[p1]++;// player1ÆÀ ºñ±â´Â Ã³¸®
-		tryDraw[p2]++;//player2ÆÀ ºñ±â´Â Ã³¸®
+		tryDraw[p1]++;// player1íŒ€ ë¹„ê¸°ëŠ” ì²˜ë¦¬
+		tryDraw[p2]++;//player2íŒ€ ë¹„ê¸°ëŠ” ì²˜ë¦¬
 		if (tryDraw[p1] <= draw[p1] && tryDraw[p2] <= draw[p2]){
 			recur(cnt + 1);
 			if(feasibility){
 				return;
 			}
 		}
-		tryDraw[p1]--;// À§¿¡¼­ Ã³¸®ÇÑ °á°ú µÇµ¹·Á³õÀ½
-		tryDraw[p2]--;// À§¿¡¼­ Ã³¸®ÇÑ °á°ú µÇµ¹·Á³õÀ½
+		tryDraw[p1]--;// ìœ„ì—ì„œ ì²˜ë¦¬í•œ ê²°ê³¼ ë˜ëŒë ¤ë†“ìŒ
+		tryDraw[p2]--;// ìœ„ì—ì„œ ì²˜ë¦¬í•œ ê²°ê³¼ ë˜ëŒë ¤ë†“ìŒ
 		
 		
 		///////////////////////////////////////////////////////////
 		
 		
-		tryLose[p1]++;//player1ÆÀ Áö´Â Ã³¸®
-		tryWin[p2]++;//player2ÆÀ ÀÌ±â´Â Ã³¸®
+		tryLose[p1]++;//player1íŒ€ ì§€ëŠ” ì²˜ë¦¬
+		tryWin[p2]++;//player2íŒ€ ì´ê¸°ëŠ” ì²˜ë¦¬
 		if (tryLose[p1] <= lose[p1] && tryWin[p2] <= win[p2]){
 			recur(cnt + 1);
 			if(feasibility){
 				return;
 			}
 		}
-		tryLose[p1]--;// À§¿¡¼­ Ã³¸®ÇÑ °á°ú µÇµ¹·Á³õÀ½
-		tryWin[p2]--;// À§¿¡¼­ Ã³¸®ÇÑ °á°ú µÇµ¹·Á³õÀ½
+		tryLose[p1]--;// ìœ„ì—ì„œ ì²˜ë¦¬í•œ ê²°ê³¼ ë˜ëŒë ¤ë†“ìŒ
+		tryWin[p2]--;// ìœ„ì—ì„œ ì²˜ë¦¬í•œ ê²°ê³¼ ë˜ëŒë ¤ë†“ìŒ
 	}
 
 	static void process() {
@@ -80,18 +84,18 @@ public class Main1841_¿ùµåÄÅ {
 	}
 
 	public static void main(String[] args) throws IOException {
-		win = new int[n];	// °¢ ÆÀº° ½Â ¹« ÆĞ ¹è¿­
+		win = new int[n];	// ê° íŒ€ë³„ ìŠ¹ ë¬´ íŒ¨ ë°°ì—´
 		lose = new int[n];
 		draw = new int[n];
 		
-		tryWin = new int[n];	// °æ±â¸¦ Á¶ÇÕÇØ°¡¸é¼­ ½Â¹«¸¦ ´©ÀûÇÏ´Â ¹è¿­
-		tryLose = new int[n];	// À§ÀÇ win lose draw¿Í ´ëÁ¶ÇØ³ª°¡¸é¼­ °á°ú µµÃâ
+		tryWin = new int[n];	// ê²½ê¸°ë¥¼ ì¡°í•©í•´ê°€ë©´ì„œ ìŠ¹ë¬´ë¥¼ ëˆ„ì í•˜ëŠ” ë°°ì—´
+		tryLose = new int[n];	// ìœ„ì˜ win lose drawì™€ ëŒ€ì¡°í•´ë‚˜ê°€ë©´ì„œ ê²°ê³¼ ë„ì¶œ
 		tryDraw = new int[n];
 		
-		player1 = new int[m];	// ¸ğµç °æ±âÀÇ Á¶ÇÕ ÀúÀå
+		player1 = new int[m];	// ëª¨ë“  ê²½ê¸°ì˜ ì¡°í•© ì €ì¥
 		player2 = new int[m];
 
-		// °æ±â Á¶ÇÕ¸¸µé±â
+		// ê²½ê¸° ì¡°í•©ë§Œë“¤ê¸°
 		// 0-1,2,3,4,5   1-2,3,4,5  2-3,4,5   3-4,5   4-5
 		for (int i = 0, cnt = 0; i < n; i++){
 			for (int j = i + 1; j < n; j++) {
@@ -110,9 +114,9 @@ public class Main1841_¿ùµåÄÅ {
 				draw[i] = Integer.parseInt(st.nextToken());
 				lose[i] = Integer.parseInt(st.nextToken());
 				
-				if (win[i] + lose[i] + draw[i] != n - 1){ // ÀÌ±â°í Áö°í ºñ±ä °æ±âÀÇ ÇÕÀÌ n-1 Áï, 5°æ±â°¡ ¾Æ´Ï¸é ¹«Á¶°Ç ºÒ°¡´ÉÇÑ °á°úÀÓ
+				if (win[i] + lose[i] + draw[i] != n - 1){ // ì´ê¸°ê³  ì§€ê³  ë¹„ê¸´ ê²½ê¸°ì˜ í•©ì´ n-1 ì¦‰, 5ê²½ê¸°ê°€ ì•„ë‹ˆë©´ ë¬´ì¡°ê±´ ë¶ˆê°€ëŠ¥í•œ ê²°ê³¼ì„
 					System.out.print(0+" ");
-					continue L; //´ÙÀ½ ÄÉÀÌ½º·Î °Ç³Ê¶Ü
+					continue L; //ë‹¤ìŒ ì¼€ì´ìŠ¤ë¡œ ê±´ë„ˆëœ€
 				}
 			}
 			process();
