@@ -4,7 +4,11 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Solution1949_µî»ê·ÎÁ¶Á¤ {
+/* URL
+   SW Expert Academy
+*/
+
+public class Solution1949_ë“±ì‚°ë¡œì¡°ì„± {
 	
 	static BufferedReader br;
 	static StringBuilder result;
