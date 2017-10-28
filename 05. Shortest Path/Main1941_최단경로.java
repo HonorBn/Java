@@ -5,7 +5,11 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Main1941_ÃÖ´Ü°æ·Î {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1214&sca=50&sfl=wr_hit&stx=1941&sop=and
+*/
+
+public class Main1941_ìµœë‹¨ê²½ë¡œ {
 	
 	static int n, m;
 	static int[] costs;
@@ -107,9 +111,9 @@ class Node implements Comparable<Node> {
 	}
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Go [¸ñÀûÁö : ");
+		builder.append("Go [Â¸Ã±Ã€Ã»ÃÃ¶ : ");
 		builder.append(num);
-		builder.append(", ºñ¿ë : ");
+		builder.append(", ÂºÃ±Â¿Ã« : ");
 		builder.append(cost);
 		builder.append(", Next : ");
 		builder.append(next);
