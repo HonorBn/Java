@@ -3,15 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* 입력 데이터
-4
-0 0 0 0
-4 0 0 0
-8 32 4 0
-8 8 4 0
+/* URL
+   https://www.acmicpc.net/problem/12100
 */
 
-public class Main12100_2048_Easy_백준 {
+public class Main12100_2048_Easy {
 	
 	static int n, maxValue, map[][], mapTemp[][], dir[][];
 	
