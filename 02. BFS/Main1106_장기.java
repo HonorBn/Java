@@ -5,8 +5,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-//æÀ∞Ì∏Æ¡Ú - BFS - ¿Â±‚
-public class Main1106_¿Â±‚ {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=386&sca=50&sfl=wr_hit&stx=1106&sop=and
+*/
+
+public class Main1106_Ïû•Í∏∞ {
 
 	public static void main(String[] args) throws IOException {
 		
