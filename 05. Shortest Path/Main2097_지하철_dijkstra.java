@@ -6,7 +6,11 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Main2097_ÁöÇÏÃ¶_dijkstra {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1360&sca=50&sfl=wr_hit&stx=2097&sop=and
+*/
+
+public class Main2097_ì§€í•˜ì² _dijkstra {
 
 	public static void main(String[] args) throws IOException {
 		
@@ -23,17 +27,17 @@ public class Main2097_ÁöÇÏÃ¶_dijkstra {
 				distance[i][j] = Integer.parseInt(st.nextToken());
 		}
 		
-		// ¹è¿­ ÁØºñ
+		// ë°°ì—´ ì¤€ë¹„
 		int[] path = new int[n];
 		int[] dist = new int[n];
 		Arrays.fill(dist, 99999);
 		boolean[] visit = new boolean[n];
 		
-		// ½ÃÀÛÁ¡ ÁöÁ¤
+		// ì‹œì‘ì  ì§€ì •
 		dist[0] = 0;
 		que.offer(new Station(0, dist[0]));
 		
-		// Ã³¸®
+		// ì²˜ë¦¬
 		int from = 0;
 		int viaCost = 0;
 		Station temp = null;
@@ -50,14 +54,14 @@ public class Main2097_ÁöÇÏÃ¶_dijkstra {
 				if (!visit[to]) {
 					if (viaCost + distance[from][to] < dist[to]) {
 						dist[to] = viaCost + distance[from][to];
-						path[to] = from; // ³» ÀÚ¸®¿¡ Á÷Àü¿¡ ´©±¸¸¦ °ÅÃÄ¿Ô´ÂÁö ±â¾ï, ³ª¸¦ ÃÖÀûÈ­½ÃÅ² Á÷ÀüÀÇ ³ëµå
+						path[to] = from; // ë‚´ ìë¦¬ì— ì§ì „ì— ëˆ„êµ¬ë¥¼ ê±°ì³ì™”ëŠ”ì§€ ê¸°ì–µ, ë‚˜ë¥¼ ìµœì í™”ì‹œí‚¨ ì§ì „ì˜ ë…¸ë“œ
 						que.offer(new Station(to, dist[to]));
 					}
 				}
 			}
 		}
 		
-		// Ãâ·Â
+		// ì¶œë ¥
 		ArrayList<Integer> print = new ArrayList<>();
 		print.add(end+1);
 		int num = end;
