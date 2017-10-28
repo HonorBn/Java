@@ -3,7 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main1681_ÇØ¹ÐÅÏ¼øÈ¯È¸·Î {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=954&sca=50&sfl=wr_hit&stx=1681&sop=and
+*/
+
+public class Main1681_í•´ë°€í„´ìˆœí™˜íšŒë¡œ {
 	
 	static int n, start;
 	static int min, finish;
