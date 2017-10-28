@@ -5,7 +5,11 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Main1389_ÄÉºóº£ÀÌÄÁÀÇ6´Ü°è¹ıÄ¢_¹éÁØ {
+/* URL
+   https://www.acmicpc.net/problem/1389
+*/
+
+public class Main1389_ì¼€ë¹ˆë² ì´ì»¨ì˜6ë‹¨ê³„ë²•ì¹™ {
 	
 	static User friends[];
 	static int n, m, kevin[], kevins[];
