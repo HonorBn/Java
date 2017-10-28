@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /* URL
-   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=300&sca=50&sfl=wr_hit&stx=1027
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=300&sca=50&sfl=wr_hit&stx=1027&sop=and
 */
 
 public class Main1027_좋은수열 {
