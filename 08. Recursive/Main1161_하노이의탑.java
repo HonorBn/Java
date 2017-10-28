@@ -2,7 +2,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main1161_ÇÏ³ëÀÌÀÇÅ¾ {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=441&sca=50&sfl=wr_hit&stx=1161&sop=and
+*/
+
+public class Main1161_í•˜ë…¸ì´ì˜íƒ‘ {
 	
 	static StringBuilder builder = new StringBuilder();
 	
@@ -16,10 +20,10 @@ public class Main1161_ÇÏ³ëÀÌÀÇÅ¾ {
 	public static void fun(int n, int from, int temp, int to) {
 		if (n == 0) return;
 		
-		// n-1±îÁö temp¿¡
+		// n-1ê¹Œì§€ tempì—
 		fun(n-1, from, to, temp);
 		
-		// nÀ» to¿¡
+		// nì„ toì—
 		builder.append(n);
 		builder.append(" : ");
 		builder.append(from);
@@ -27,7 +31,7 @@ public class Main1161_ÇÏ³ëÀÌÀÇÅ¾ {
 		builder.append(to);
 		builder.append("\n");
 		
-		// n-1À» to¿¡
+		// n-1ì„ toì—
 		fun(n-1, temp, from, to);
 		
 	}
