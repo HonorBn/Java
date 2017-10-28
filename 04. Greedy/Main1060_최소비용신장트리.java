@@ -56,9 +56,7 @@ public class Main1060_최소비용신장트리 {
 		}
 		
 		System.out.println(result);
-		
 	}
-
 }
 
 
