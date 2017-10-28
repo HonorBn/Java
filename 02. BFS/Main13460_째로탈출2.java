@@ -5,7 +5,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main13460_Â°·ÎÅ»Ãâ2_¹éÁØ {
+/* URL
+   https://www.acmicpc.net/problem/13460
+*/
+
+public class Main13460_ì§¸ë¡œíƒˆì¶œ2 {
 	
 	static Marble start;
 	static int r, c, resCnt, hole[], map[][], dir[][];
@@ -28,7 +32,7 @@ public class Main13460_Â°·ÎÅ»Ãâ2_¹éÁØ {
 		r = Integer.parseInt(st.nextToken());
 		c = Integer.parseInt(st.nextToken());
 		
-		map = new int[r][c];	// 1: º®, 0: Åë·Î // ±¸¸Û ÁÂÇ¥ ¹× ±¸½½ ÃÊ±â ÁÂÇ¥ ÀúÀå
+		map = new int[r][c];	// 1: ë²½, 0: í†µë¡œ // êµ¬ë© ì¢Œí‘œ ë° êµ¬ìŠ¬ ì´ˆê¸° ì¢Œí‘œ ì €ìž¥
 		
 		char item, line[];
 		int redR = 0, redC = 0, blueR = 0, blueC = 0;
@@ -49,7 +53,7 @@ public class Main13460_Â°·ÎÅ»Ãâ2_¹éÁØ {
 			}
 		}
 		
-		resCnt = -1;	// Red°¡ ±¸¸Û¿¡ ºüÁø °æ¿ì¸¦ Á¦¿ÜÇÏ°í´Â ¸ðµÎ -1À» Ãâ·ÂÇÏ¹Ç·Î ÃÊ±â°ª -1·Î ¼³Á¤
+		resCnt = -1;	// Redê°€ êµ¬ë©ì— ë¹ ì§„ ê²½ìš°ë¥¼ ì œì™¸í•˜ê³ ëŠ” ëª¨ë‘ -1ì„ ì¶œë ¥í•˜ë¯€ë¡œ ì´ˆê¸°ê°’ -1ë¡œ ì„¤ì •
 		start = new Marble(redR, redC, blueR, blueC, 0);
 		
 	}
@@ -71,13 +75,13 @@ public class Main13460_Â°·ÎÅ»Ãâ2_¹éÁØ {
 			fromBlueR = from.blueR; fromBlueC = from.blueC;
 			cnt = from.cnt;
 			
-			if (cnt > 10) return;	// cnt°¡ 10º¸´Ù Å©¸é resCnt °»½Å¾ÈÇÏ°í BFS Á¾·á -> resCnt = -1ÀÎ »óÅÂ
-			if (fromRedR == hole[0] && fromRedC == hole[1])	// Red°¡ ±¸¸ÛÀÌ¸é ¼º°øÀÌ¹Ç·Î resCnt °»½Å
+			if (cnt > 10) return;	// cntê°€ 10ë³´ë‹¤ í¬ë©´ resCnt ê°±ì‹ ì•ˆí•˜ê³  BFS ì¢…ë£Œ -> resCnt = -1ì¸ ìƒíƒœ
+			if (fromRedR == hole[0] && fromRedC == hole[1])	// Redê°€ êµ¬ë©ì´ë©´ ì„±ê³µì´ë¯€ë¡œ resCnt ê°±ì‹ 
 				{resCnt = cnt; return;}
 			
-			for (int i = 0; i < 4; i++) {	// 4 ¹æÇâ Å½»ö (»ó>ÇÏ>ÁÂ>¿ì)
+			for (int i = 0; i < 4; i++) {	// 4 ë°©í–¥ íƒìƒ‰ (ìƒ>í•˜>ì¢Œ>ìš°)
 				
-				// º® ¶Ç´Â ±¸¸ÛÀ» ¸¸³¯ ¶§±îÁö toÁÂÇ¥ °»½Å
+				// ë²½ ë˜ëŠ” êµ¬ë©ì„ ë§Œë‚  ë•Œê¹Œì§€ toì¢Œí‘œ ê°±ì‹ 
 				toRedR = fromRedR + dir[i][0]; toRedC = fromRedC + dir[i][1];
 				toBlueR = fromBlueR + dir[i][0]; toBlueC = fromBlueC + dir[i][1];
 				
@@ -87,20 +91,20 @@ public class Main13460_Â°·ÎÅ»Ãâ2_¹éÁØ {
 				while (map[toBlueR][toBlueC] != 1 && !(toBlueR == hole[0] && toBlueC == hole[1]))
 					{toBlueR += dir[i][0]; toBlueC += dir[i][1];}
 				
-				// Blue°¡ ±¸¸ÛÀÌ¸é que¿¡ offerÇÏÁö ¾Ê±â À§ÇØ continue
-				// 4 ¹æÇâ Áß Blue°¡ ±¸¸ÛÀÌ ¾Æ´Ñ °æ¿ì¸¸ BFS °è¼Ó ÁøÇà
+				// Blueê°€ êµ¬ë©ì´ë©´ queì— offerí•˜ì§€ ì•Šê¸° ìœ„í•´ continue
+				// 4 ë°©í–¥ ì¤‘ Blueê°€ êµ¬ë©ì´ ì•„ë‹Œ ê²½ìš°ë§Œ BFS ê³„ì† ì§„í–‰
 				if (toBlueR == hole[0] && toBlueC == hole[1]) continue;
 				
-				// Blue°¡ ±¸¸ÛÀÎ °æ¿ì´Â À§¿¡¼­ continueÇß±â ¶§¹®¿¡
-				// Red°¡ ±¸¸ÛÀÌ°í Blue°¡ º®¿¡ ¹ÚÈù »óÅÂ or ±¸½½ ¸ðµÎ º®¿¡ ¹ÚÇô ÀÖ´Â »óÅÂ
-				// Red°¡ ±¸¸ÛÀÎ °æ¿ì´Â ±× ÁÂÇ¥ ±×´ë·Î que¿¡ offerÇÏ±â À§ÇØ ±× ¿ÜÀÇ °æ¿ì¸¸ µÎ ±¸½½ ¸ðµÎ ÇÑÄ­ µÚ·Î back
+				// Blueê°€ êµ¬ë©ì¸ ê²½ìš°ëŠ” ìœ„ì—ì„œ continueí–ˆê¸° ë•Œë¬¸ì—
+				// Redê°€ êµ¬ë©ì´ê³  Blueê°€ ë²½ì— ë°•ížŒ ìƒíƒœ or êµ¬ìŠ¬ ëª¨ë‘ ë²½ì— ë°•í˜€ ìžˆëŠ” ìƒíƒœ
+				// Redê°€ êµ¬ë©ì¸ ê²½ìš°ëŠ” ê·¸ ì¢Œí‘œ ê·¸ëŒ€ë¡œ queì— offerí•˜ê¸° ìœ„í•´ ê·¸ ì™¸ì˜ ê²½ìš°ë§Œ ë‘ êµ¬ìŠ¬ ëª¨ë‘ í•œì¹¸ ë’¤ë¡œ back
 				if (!(toRedR == hole[0] && toRedC == hole[1]))
 					{toRedR -= dir[i][0]; toRedC -= dir[i][1];}
 				
 				toBlueR -= dir[i][0]; toBlueC -= dir[i][1];
 				
-				// 2°³ ±¸½½ÀÌ °ãÄ¡´Â °æ¿ì¸¦ Ã³¸®ÇÏ´Â ºÎºÐ (Red¿Í BlueÀÇ ÁÂÇ¥°¡ °°Àº °æ¿ì)
-				// ÀÌµ¿ ¹æÇâ(i)°ú µÎ ±¸½½ÀÇ fromÁÂÇ¥°ª Â÷ÀÌ(cha)¸¦ ÀÌ¿ëÇÏ¿© »ó´ë ±¸½½À» µÚµû¶ó°£ ±¸½½À» ÇÑÄ­ µÚ·Î back
+				// 2ê°œ êµ¬ìŠ¬ì´ ê²¹ì¹˜ëŠ” ê²½ìš°ë¥¼ ì²˜ë¦¬í•˜ëŠ” ë¶€ë¶„ (Redì™€ Blueì˜ ì¢Œí‘œê°€ ê°™ì€ ê²½ìš°)
+				// ì´ë™ ë°©í–¥(i)ê³¼ ë‘ êµ¬ìŠ¬ì˜ fromì¢Œí‘œê°’ ì°¨ì´(cha)ë¥¼ ì´ìš©í•˜ì—¬ ìƒëŒ€ êµ¬ìŠ¬ì„ ë’¤ë”°ë¼ê°„ êµ¬ìŠ¬ì„ í•œì¹¸ ë’¤ë¡œ back
 				if (toRedR == toBlueR && toRedC == toBlueC) {
 					
 					cha = (fromRedR-fromBlueR) + (fromRedC-fromBlueC);
@@ -118,11 +122,11 @@ public class Main13460_Â°·ÎÅ»Ãâ2_¹éÁØ {
 					}
 				}
 				
-				// µÎ ±¸½½ ¸ðµÎ fromÁÂÇ¥°ª°ú toÁÂÇ¥ °ªÀÌ °°Àº °æ¿ì´Â ´õÀÌ»ó º¯È­°¡ ¾øÀ¸¹Ç·Î continue
+				// ë‘ êµ¬ìŠ¬ ëª¨ë‘ fromì¢Œí‘œê°’ê³¼ toì¢Œí‘œ ê°’ì´ ê°™ì€ ê²½ìš°ëŠ” ë”ì´ìƒ ë³€í™”ê°€ ì—†ìœ¼ë¯€ë¡œ continue
 				if (fromRedR == toRedR && fromBlueR == toBlueR &&
 					fromRedC == toRedC && fromBlueC == toBlueC) continue;
 				
-				// ´õ ÀÌµ¿ÇÒ ¿©Áö°¡ ÀÖ°Å³ª Red°¡ ±¸¸Û¿¡ µé¾î°£ °æ¿ì¸¸ offer
+				// ë” ì´ë™í•  ì—¬ì§€ê°€ ìžˆê±°ë‚˜ Redê°€ êµ¬ë©ì— ë“¤ì–´ê°„ ê²½ìš°ë§Œ offer
 				que.offer(new Marble(toRedR, toRedC, toBlueR, toBlueC, cnt + 1));
 				
 			}
