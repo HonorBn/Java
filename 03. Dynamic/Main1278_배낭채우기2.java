@@ -3,7 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main1278_¹è³¶Ã¤¿ì±â2 {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=561&sca=50&sfl=wr_hit&stx=1278&sop=and
+*/
+
+public class Main1278_ë°°ë‚­ì±„ìš°ê¸°2 {
 	
 	static int n, w, dynamic[][], data[][];
 	
