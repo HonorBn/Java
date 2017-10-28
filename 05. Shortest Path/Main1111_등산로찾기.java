@@ -5,17 +5,11 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-5
-3 3
-1 2 4 3 2
-1 3 5 4 4
-2 3 6 5 1
-3 1 4 1 3
-2 3 3 5 3
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=391&sca=50&sfl=wr_hit&stx=1111&sop=and
+*/
 
-public class Main1111_µî»ê·ÎÃ£±â {
+public class Main1111_ë“±ì‚°ë¡œì°¾ê¸° {
 	
 	static final int MAX_FORCE = 500000; // 100 * 100 * 50
 	static int n, peekR, peekC, minForce, dir[][], mountain[][];
