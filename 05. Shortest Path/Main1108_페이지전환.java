@@ -6,16 +6,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-5
-1 2
-2 4
-1 3
-3 1
-4 3
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=388&sca=50&sfl=wr_hit&stx=1108&sop=and
+*/
 
-public class Main1108_ÆäÀÌÁöÀüÈ¯ {
+public class Main1108_í˜ì´ì§€ì „í™˜ {
 	
 	static Page[] pages;
 	static int[][] distance;
@@ -23,7 +18,9 @@ public class Main1108_ÆäÀÌÁöÀüÈ¯ {
 	public static void main(String[] args) throws IOException {
 		
 		input();
+		
 		changePage();
+		
 		print();
 		
 	}
@@ -121,7 +118,7 @@ class Page {
 		this.next = next;
 	}
 	public String toString() {
-		return "[¹øÈ£=" + no + ", ´ÙÀ½=" + next + "]";
+		return "[ë²ˆí˜¸=" + no + ", ë‹¤ìŒ=" + next + "]";
 	}
 	public void add(Page page) {
 		page.next = this.next;
