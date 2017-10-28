@@ -4,19 +4,11 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-7 8
-0 1 3
-1 1 7
-0 7 6
-1 7 1
-0 3 7
-0 4 2
-0 1 1
-1 1 1
- */
+/* URL
+   https://www.acmicpc.net/problem/1717
+*/
 
-public class Main1717_ÁıÇÕÀÇÇ¥Çö_¹éÁØ {	// 0 : Union, 1 : Find
+public class Main1717_ì§‘í•©ì˜í‘œí˜„ {	// 0 : Union, 1 : Find
 	
 	static int n, m, parents[], inputs[][];
 	static StringBuilder result;
@@ -39,7 +31,7 @@ public class Main1717_ÁıÇÕÀÇÇ¥Çö_¹éÁØ {	// 0 : Union, 1 : Find
 		n = Integer.parseInt(st.nextToken());
 		m = Integer.parseInt(st.nextToken());
 		
-		parents = new int[n+1];		// ÀÚ½ÅÀÇ ºÎ¸ğ ³ëµå¸¦ ±â¾ïÇÏ´Â ¹è¿­
+		parents = new int[n+1];		// ìì‹ ì˜ ë¶€ëª¨ ë…¸ë“œë¥¼ ê¸°ì–µí•˜ëŠ” ë°°ì—´
 		Arrays.fill(parents, -1);
 		
 		inputs = new int[m][3];
@@ -74,11 +66,11 @@ public class Main1717_ÁıÇÕÀÇÇ¥Çö_¹éÁØ {	// 0 : Union, 1 : Find
     	
 	}
     
-    private static int findParent(int index) { // ÀÔ·Â ÀÎµ¦½º¸¦ °¡Áø Æ®¸®ÀÇ Root ¸®ÅÏ
+    private static int findParent(int index) { // ì…ë ¥ ì¸ë±ìŠ¤ë¥¼ ê°€ì§„ íŠ¸ë¦¬ì˜ Root ë¦¬í„´
     	
     	if (parents[index] == -1) return index;
     	
-    	// return findParent(parents[index]);	// ¸¶Áö¸·¿¡ Ã£Àº ÀÎµ¦½º (root)¸¦ ¸ğµÎÀÇ Á÷¼Ó ºÎ¸ğ·Î ¼³Á¤
+    	// return findParent(parents[index]);	// ë§ˆì§€ë§‰ì— ì°¾ì€ ì¸ë±ìŠ¤ (root)ë¥¼ ëª¨ë‘ì˜ ì§ì† ë¶€ëª¨ë¡œ ì„¤ì •
     	return parents[index] = findParent(parents[index]);
     }
     
