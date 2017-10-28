@@ -3,7 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main1733_¿À¸ñ {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1006&sca=50&sfl=wr_hit&stx=1733&sop=and
+*/
+
+public class Main1733_ì˜¤ëª© {
 	
 	static int[][] board, direction;
 	
@@ -75,25 +79,3 @@ public class Main1733_¿À¸ñ {
 		return false;
 	}
 }
-
-/* 
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 1 2 0 0 2 2 2 1 0 0 0 0 0 0 0 0 0 0
-0 0 1 2 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
-0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 1 2 2 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-*/
