@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
    http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=458&sca=50&sfl=wr_hit&stx=1175
 */
 
-public class Main1175_2 {
+public class Main1175_주사위던지기2 {
 	
 	static int n;
 	static int m;
