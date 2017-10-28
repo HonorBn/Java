@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /* URL
-http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1270&sca=50&sfl=wr_hit&stx=1997&sop=and
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1270&sca=50&sfl=wr_hit&stx=1997&sop=and
 */
 
 public class Main1997_떡먹는호랑이 {
