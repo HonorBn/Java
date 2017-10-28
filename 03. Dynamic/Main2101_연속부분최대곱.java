@@ -3,7 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Main2101_¿¬¼ÓºÎºĞÃÖ´ë°ö {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1364&sca=50&sfl=wr_hit&stx=2101&sop=and
+*/
+
+public class Main2101_ì—°ì†ë¶€ë¶„ìµœëŒ€ê³± {
 	
 	static int n;
 	static double dynamic[];
