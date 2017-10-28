@@ -3,7 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class Main1459_¼ıÀÚ°í¸£±â {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=731&sca=50&sfl=wr_hit&stx=1459&sop=and
+*/
+
+public class Main1459_ìˆ«ìê³ ë¥´ê¸° {
 	
 	static int n;
 	static int[] num;
