@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 /* URL
-   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=458&sca=50&sfl=wr_hit&stx=1175
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=458&sca=50&sfl=wr_hit&stx=1175&sop=and
 */
 
 public class Main1175_주사위던지기2 {
