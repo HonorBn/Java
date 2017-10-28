@@ -5,16 +5,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-/*
-6 4 
-0 0 0 -1 0 1 
-0 1 0 0 0 0 
-0 0 0 0 -1 0 
-0 0 1 0 0 1
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1875&sca=50&sfl=wr_hit&stx=2613&sop=and
 */
-// 1: ÀÍÀº Åä¸¶Åä, 0 : ÀÍÁö ¾ÊÀº Åä¸¶Åä, -1 : ºóÄ­
 
-public class Main2613_Åä¸¶Åä_°í {
+public class Main2613_í† ë§ˆí† _ê³  {
 	
 	static int day;
 	static int[][] box;
