@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
    https://www.acmicpc.net/problem/3109
 */
 
-public class Main3109_ {
+public class Main3109_빵집 {
 	
 	static boolean flag;
 	static int r, c, maxSize, map[][], dir[][];
