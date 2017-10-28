@@ -4,7 +4,11 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main10875_¹ì {
+/* URL
+   https://www.acmicpc.net/problem/10875
+*/
+
+public class Main10875_ë±€ {
 	
 	static long life;
 	static ArrayList<int[]> body;
@@ -66,7 +70,7 @@ public class Main10875_¹ì {
 						:
 						(fromR > toR)? fromR-toR : toR-fromR; 
 			
-			// ¸ö È®ÀÎ (º® Æ÷ÇÔ)
+			// ëª¸ í™•ì¸ (ë²½ í¬í•¨)
 			minLen = MAX_LENGTH;
 			for (int[] lineYou : body) {
 				if (intersect(dir, fromR, fromC, toR, toC, lineYou)) {
@@ -80,7 +84,7 @@ public class Main10875_¹ì {
 				return;
 			}
 			
-			// »ıÁ¸ : ¸ö ÀúÀå, À§Ä¡¿Í ¹æÇâ °»½Å
+			// ìƒì¡´ : ëª¸ ì €ì¥, ìœ„ì¹˜ì™€ ë°©í–¥ ê°±ì‹ 
 			body.add(newBody(dir, fromR, fromC, toR, toC));
 			
 			fromR = toR; fromC = toC; life += time;
