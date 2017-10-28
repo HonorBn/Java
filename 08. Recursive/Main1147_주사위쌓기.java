@@ -4,7 +4,11 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main1147_ÁÖ»çÀ§½×±â {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=427&sca=50&sfl=wr_hit&stx=1147&sop=and
+*/
+
+public class Main1147_ì£¼ì‚¬ìœ„ìŒ“ê¸° {
 	
 	static int n;
 	static int sum;
@@ -28,7 +32,7 @@ public class Main1147_ÁÖ»çÀ§½×±â {
     	result = new int[6];
     	for (int i = 0; i < 6; i++) {
     		sum = 0;
-    		fun(0, num[0][i]);  // 1¹ø ÁÖ»çÀ§, 1¹ø ÁÖ»çÀ§ÀÇ ¾Æ·§¸é
+    		fun(0, num[0][i]);  // 1ë²ˆ ì£¼ì‚¬ìœ„, 1ë²ˆ ì£¼ì‚¬ìœ„ì˜ ì•„ë«ë©´
     		result[i] = sum;
     	}
     	
@@ -37,7 +41,7 @@ public class Main1147_ÁÖ»çÀ§½×±â {
     	
     }
 	
-	public static void fun(int seq, int lower) { // seq : ÇöÀç ÁÖ»çÀ§ Ãş¼ö, upper : ÇöÀç ÁÖ»çÀ§ÀÇ ¾Æ·§¸é 
+	public static void fun(int seq, int lower) { // seq : í˜„ì¬ ì£¼ì‚¬ìœ„ ì¸µìˆ˜, upper : í˜„ì¬ ì£¼ì‚¬ìœ„ì˜ ì•„ë«ë©´ 
 		
 		int max = 0;
 		for (int j = 0; j < 6; j++) {
@@ -48,11 +52,11 @@ public class Main1147_ÁÖ»çÀ§½×±â {
 		sum += max;
 				
 		if (seq+1 < n)
-			fun(seq+1, findUpper(seq, lower));  // ´ÙÀ½ ÁÖ»çÀ§, ÇöÀç ÁÖ»çÀ§ÀÇ À­¸é
+			fun(seq+1, findUpper(seq, lower));  // ë‹¤ìŒ ì£¼ì‚¬ìœ„, í˜„ì¬ ì£¼ì‚¬ìœ„ì˜ ìœ—ë©´
 	}
 	
 	public static int findUpper(int presSeq, int presLower) { 
-		// presSeq : ÇöÀç ÁÖ»çÀ§ Ãş¼ö, prevUpper : ÇöÀç ÁÖ»çÀ§ ¾Æ·§¸é ¼ıÀÚ  >  ÇöÀç ÁÖ»çÀ§ À­¸é ¼ıÀÚ
+		// presSeq : í˜„ì¬ ì£¼ì‚¬ìœ„ ì¸µìˆ˜, prevUpper : í˜„ì¬ ì£¼ì‚¬ìœ„ ì•„ë«ë©´ ìˆ«ì  >  í˜„ì¬ ì£¼ì‚¬ìœ„ ìœ—ë©´ ìˆ«ì
 		int presLowerIndex = -1;
 		int presUpperIndex = -1;
 		for (int j = 0; j < 6; j++) {
