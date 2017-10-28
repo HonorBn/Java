@@ -3,17 +3,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-4 10
-1 2 1 2 1 2 1 2 1 2
-2 1 2 1 2 1 2 1 2 1
-1 2 1 2 1 2 1 2 1 2
-2 1 2 1 2 1 2 1 2 1
- */
+/* URL
+   https://www.acmicpc.net/problem/14500
+*/
 
-// ÀÌ¹Ì µÎ¾ú´ø À§Ä¡¿Í ¸ğ¾çÀ» Å½»ö ¾ÈÇÏ´Â ¹æ¹ı ÇÊ¿ä
+// ì´ë¯¸ ë‘ì—ˆë˜ ìœ„ì¹˜ì™€ ëª¨ì–‘ì„ íƒìƒ‰ ì•ˆí•˜ëŠ” ë°©ë²• í•„ìš”
 
-public class Main14500_Å×Æ®·Î¹Ì³ë_¹éÁØ {
+public class Main14500_í…ŒíŠ¸ë¡œë¯¸ë…¸ {
 	
 	static int r, c, maxSum, map[][], dir[][];
 	static boolean visit[][];
