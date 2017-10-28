@@ -3,7 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main14503_·Îº¿Ã»¼Ò±â_¹éÁØ {
+/* URL
+   https://www.acmicpc.net/problem/14503
+*/
+
+public class Main14503_ë¡œë´‡ì²­ì†Œê¸° {
 	
 	static int r, c, area, start[], map[][], dir[][];
 	static boolean stop;
