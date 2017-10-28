@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-https://www.acmicpc.net/problem/4195
+/* URL
+   https://www.acmicpc.net/problem/4195
+*/
 
 public class Main4195_친구네트워크 {
 	
