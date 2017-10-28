@@ -5,18 +5,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
  
-/* ¿‘∑¬ µ•¿Ã≈Õ
-5 6
-0 0 0 0 0 0
-0 1 1 0 1 0
-0 1 0 0 0 0
-0 0 1 1 1 0
-1 0 0 0 0 0 
-4 2 3
-2 4 1
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=285&sca=50&sfl=wr_hit&stx=1006&sop=and
+*/
  
-public class Main1006_∑Œ∫ø {
+public class Main1006_Î°úÎ¥á {
  
     static int r, c, start[], end[], startPole, endPole, minCnt, dir[][], map[][][];
     static final int EAST = 1, WEST = 2, SOUTH = 3, NORTH = 4;
