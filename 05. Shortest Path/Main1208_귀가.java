@@ -7,16 +7,11 @@ import java.util.StringTokenizer;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-/* ÀÔ·Â µ¥ÀÌÅÍ
-5 
-A d 6 
-B d 3 
-C e 9 
-d Z 8 
-e Z 3
- */
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=491&sca=50&sfl=wr_hit&stx=1208&sop=and
+*/
 
-public class Main1208_±Í°¡ {
+public class Main1208_ê·€ê°€ {
 	
 	static int leastTime;
 	static char leastCow;
@@ -129,7 +124,7 @@ class Cow implements Comparable<Cow> {
 		this.time = time;
 	}
 	public String toString() {
-		return "[¸ñÀå : " + hut + ", ½Ã°£=" + time + "]";
+		return "[ëª©ìž¥ : " + hut + ", ì‹œê°„=" + time + "]";
 	}
 	public int compareTo(Cow other) {
 		return this.time-other.time;
