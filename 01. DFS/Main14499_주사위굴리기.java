@@ -3,15 +3,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/* ¿‘∑¬ µ•¿Ã≈Õ
-3 3 1 1 9
-1 2 3
-4 0 5
-6 7 8
-1 3 2 2 4 4 1 1 3
- */
+/* URL
+   https://www.acmicpc.net/problem/14499
+*/
 
-public class Main14499_¡÷ªÁ¿ß±º∏Æ±‚ {
+public class Main14499_Ï£ºÏÇ¨ÏúÑÍµ¥Î¶¨Í∏∞ {
 	
 	static int r, c, k;
 	static int[] dice, start, comms, roundIndex;
