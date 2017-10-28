@@ -5,7 +5,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main5014_½ºÅ¸Æ®¸µÅ©_¹éÁØ {
+/* URL
+   https://www.acmicpc.net/problem/5014
+*/
+
+public class Main5014_ìŠ¤íƒ€íŠ¸ë§í¬ {
 	
 	static int F, S, G, U, D;
 	static StringBuilder res;
