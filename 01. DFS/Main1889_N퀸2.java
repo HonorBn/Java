@@ -2,7 +2,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main1889_NÄý2 {
+/* URL
+   http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1162&sca=50&sfl=wr_hit&stx=1889&sop=and
+*/
+
+public class Main1889_Ní€¸2 {
 
 	static int count, caseCount, colSpot[];
 	
