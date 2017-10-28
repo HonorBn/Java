@@ -5,7 +5,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Solution1953_Ż�ֹ��˰� {
+/* URL
+   SW Expert Academy
+*/
+
+public class Solution1953_탈주범검거 {
 	
 	static BufferedReader br;
 	static StringBuilder result;
